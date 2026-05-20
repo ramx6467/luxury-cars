@@ -2,12 +2,28 @@
 <html>
 
 <head>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init("hjAO-Aa5klvPCRMoO");
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -16,18 +32,20 @@
 
             <div class="login-box">
 
+
                 <h2 class="text-warning mb-3 text-center">LuxuryCars</h2>
 
                 <!-- LOGIN FORM -->
                 <div id="loginForm">
-                    <input type="text" id="loginUser" placeholder="Username" class="form-control mb-3" />
+                    <input type="text" id="loginUser" placeholder="Username" class="form-control mb-3 " />
                     <input type="password" id="loginPass" placeholder="Password" class="form-control mb-3" />
                     <button class="btn btn-warning btn-block" onclick="loginUser()">Login</button>
 
                     <p class="text-danger mt-2" id="loginError"></p>
 
                     <p class="text-light mt-3">
-                        New user? <span class="text-warning" onclick="showSignup()" style="cursor:pointer">Sign Up</span>
+                        New user? <span class="text-warning" onclick="showSignup()" style="cursor:pointer">Sign
+                            Up</span>
                     </p>
                 </div>
 
@@ -40,7 +58,8 @@
                     <p class="text-danger mt-2" id="signupError"></p>
 
                     <p class="text-light mt-3">
-                        Already have account? <span class="text-warning" onclick="showLogin()" style="cursor:pointer">Login</span>
+                        Already have account? <span class="text-warning" onclick="showLogin()"
+                            style="cursor:pointer">Login</span>
                     </p>
                 </div>
 
@@ -53,14 +72,17 @@
         <nav>
             <nav class="navbar navbar-expand-md navbar-dark bgg fixed-top">
                 <a class="navbar-brand text-warning nabar" id="nav-title" href="#">
-                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763226864/IMG_7617_natare.jpg" class="logo" />
+                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763226864/IMG_7617_natare.jpg"
+                        class="logo" />
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto nabar">
-                        <a class="nav-link active text-warning" href="#sectionhome">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active text-warning" href="#sectionhome">Home <span
+                                class="sr-only">(current)</span></a>
                         <a class="nav-link text-warning" href="#popularcars">models</a>
                         <a class="nav-link text-warning" href="#brands">brands</a>
                         <a class="nav-link text-warning" href="#foot">contact us</a>
@@ -87,56 +109,90 @@
                 <div class="container">
                     <div class="row">
                         <div class=" col-12 col-md-6 col-lg-4 mb-3 car-card ">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhNrYYr-xrmOY4nqeTL3XTNDI70IUDwQQ1fg&s" class="immg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhNrYYr-xrmOY4nqeTL3XTNDI70IUDwQQ1fg&s"
+                                class="immg">
                             <div class="car-info">
                                 <h3>Lamborghini Aventador</h3>
                                 <p>Top Speed: 350 km/h • 0-100: 2.8s</p>
-                                <button class="btn btn-outline-warning" onclick="display('sectiondetail1')">View Details</button>
+                                <button class="btn btn-outline-warning" onclick="display('sectiondetail1')">View
+                                    Details</button>
+                                <button class="btn btn-warning" onclick="openBooking('Lamborghini Aventador')">Book
+                                    Now</button>
+
                             </div>
                         </div>
 
                         <div class=" col-12 col-md-6 col-lg-4  mb-3 car-card ">
-                            <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGGcm6PoYUI8nDl8i85DbH9M2mikJqnrhOA&s" class="immg">
+                            <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEGGcm6PoYUI8nDl8i85DbH9M2mikJqnrhOA&s"
+                                class="immg">
                             <div class="car-info">
                                 <h3>Ferrari 488 GTB</h3>
                                 <p>Top Speed: 330 km/h • 0-100: 3.0s</p>
-                                <button class="btn btn-outline-warning " onclick="display('sectiondetail2')">View Details</button>
+                                <button class="btn btn-outline-warning " onclick="display('sectiondetail2')">View
+                                    Details</button>
+                                <button class="btn btn-warning" onclick="openBooking('Ferrari 488 GTB')">Book
+                                    Now</button>
+
                             </div>
                         </div>
 
                         <div class=" col-12 col-md-6 col-lg-4  mb-3 car-card ">
-                            <img src="https://khaleejesque.me/wp-content/uploads/2022/03/DSC00683-1024x665.jpg" class="immg">
+                            <img src="https://khaleejesque.me/wp-content/uploads/2022/03/DSC00683-1024x665.jpg"
+                                class="immg">
                             <div class="car-info">
                                 <h3>Rolls Royce Phantom</h3>
                                 <p>Ultimate luxury sedan with handcrafted interiors.</p>
-                                <button class="btn btn-outline-warning" onclick="display('sectiondetail3')">View Details</button>
+                                <button class="btn btn-outline-warning" onclick="display('sectiondetail3')">View
+                                    Details</button>
+                                <button class="btn btn-warning" onclick="openBooking('Rolls Royce Phantom')">Book
+                                    Now</button>
+
                             </div>
                         </div>
 
                         <div class=" col-12 col-md-6 col-lg-4  mb-3 car-card ">
-                            <img src="https://www.topgear.com/sites/default/files/news/image/2015/04/Large%20Image_10352.jpg?w=1280&h=720" class="immg">
+                            <img src="https://www.topgear.com/sites/default/files/news/image/2015/04/Large%20Image_10352.jpg?w=1280&h=720"
+                                class="immg">
                             <div class="car-info">
                                 <h3>McLaren</h3>
-                                <p>McLaren sports cars combine cutting-edge aerodynamics with race-bred performance, delivering an exhilarating driving experience. Their lightweight design and advanced engineering make them some of the most agile supercars in the world.</p>
-                                <button class="btn btn-outline-warning" onclick="display('sectiondetail4')">View Details</button>
+                                <p>McLaren sports cars combine cutting-edge aerodynamics with race-bred performance,
+                                    delivering an exhilarating driving experience. Their lightweight design and advanced
+                                    engineering make them some of the most agile supercars in the world.</p>
+                                <button class="btn btn-outline-warning" onclick="display('sectiondetail4')">View
+                                    Details</button>
+                                <button class="btn btn-warning" onclick="openBooking('McLaren')">Book Now</button>
+
                             </div>
                         </div>
 
                         <div class=" col-12 col-md-6 col-lg-4  mb-3 car-card ">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQOcgup-AWYPF1g8up5Nt9kh4pP0vLOFBew&s" class="immg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNQOcgup-AWYPF1g8up5Nt9kh4pP0vLOFBew&s"
+                                class="immg">
                             <div class="car-info">
                                 <h3>Porsche</h3>
-                                <p>Porsche sports cars are renowned for their timeless design and precision engineering, offering a perfect balance of power and control. With a legacy rooted in performance, they deliver an unmatched driving experience on both road and track.</p>
-                                <button class="btn btn-outline-warning" onclick="display('sectiondetail5')">View Details</button>
+                                <p>Porsche sports cars are renowned for their timeless design and precision engineering,
+                                    offering a perfect balance of power and control. With a legacy rooted in
+                                    performance, they deliver an unmatched driving experience on both road and track.
+                                </p>
+                                <button class="btn btn-outline-warning" onclick="display('sectiondetail5')">View
+                                    Details</button>
+                                <button class="btn btn-warning" onclick="openBooking('Porsche')">Book Now</button>
+
                             </div>
                         </div>
 
                         <div class=" col-12 col-md-6 col-lg-4  mb-3 car-card ">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQakBNB5S1SCU9kMukSX4Je-1rJdoZlLrJgSQ&s" class="immg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQakBNB5S1SCU9kMukSX4Je-1rJdoZlLrJgSQ&s"
+                                class="immg">
                             <div class="car-info">
                                 <h3>Bugatti</h3>
-                                <p>Bugatti sports cars are masterpieces of engineering, blending extreme speed with luxurious craftsmanship. Known for their iconic design and unmatched performance, they stand as symbols of automotive excellence.</p>
-                                <button class="btn btn-outline-warning" onclick="display('sectiondetail6')">View Details</button>
+                                <p>Bugatti sports cars are masterpieces of engineering, blending extreme speed with
+                                    luxurious craftsmanship. Known for their iconic design and unmatched performance,
+                                    they stand as symbols of automotive excellence.</p>
+                                <button class="btn btn-outline-warning" onclick="display('sectiondetail6')">View
+                                    Details</button>
+                                <button class="btn btn-warning" onclick="openBooking('Bugatti')">Book Now</button>
+
                             </div>
                         </div>
                     </div>
@@ -148,42 +204,50 @@
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <a href="https://www.bentleymotors.com/en.html" target="_blank">
-                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763449832/IMG_7640_o07els.jpg" class="brand" />
+                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763449832/IMG_7640_o07els.jpg"
+                                        class="brand" />
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <a href="https://www.pagani.com/" target="_blank">
-                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763449915/IMG_7641_e44cdl.jpg" class="brand" />
+                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763449915/IMG_7641_e44cdl.jpg"
+                                        class="brand" />
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <a href="https://www.bmw.com/en/index.html" target="_blank">
-                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763449976/IMG_7642_aufr0s.jpg" class="brand" />
+                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763449976/IMG_7642_aufr0s.jpg"
+                                        class="brand" />
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <a href="https://www.mercedes-benz.com/en/" target="_blank">
-                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450028/IMG_7643_hww2ni.jpg" class="brand" />
+                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450028/IMG_7643_hww2ni.jpg"
+                                        class="brand" />
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <a href="https://www.ford.com/cars/mustang/" target="_blank">
-                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450081/IMG_7644_iqcv87.jpg" class="must" />
+                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450081/IMG_7644_iqcv87.jpg"
+                                        class="must" />
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <a href="https://www.koenigsegg.com/home" target="_blank">
-                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450135/IMG_7645_nr1ezb.jpg" class="brand" />
+                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450135/IMG_7645_nr1ezb.jpg"
+                                        class="brand" />
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <a href="https://www.astonmartin.com/en" target="_blank">
-                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450557/IMG_7646_nee4b1.jpg" class="brand" />
+                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450557/IMG_7646_nee4b1.jpg"
+                                        class="brand" />
                                 </a>
                             </div>
                             <div class="col-12 col-md-6">
                                 <a href="https://www.jaguar.in/index.html" target="_blank">
-                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450615/IMG_7647_ueiuue.jpg" class="brand" />
+                                    <img src="https://res.cloudinary.com/da7bgc4b9/image/upload/v1763450615/IMG_7647_ueiuue.jpg"
+                                        class="brand" />
                                 </a>
                             </div>
                         </div>
@@ -198,7 +262,8 @@
             <a href="https://www.instagram.com/b.r.n.ganesh?igsh=Y3BjN3pycmg2djhx&utm_source=qr" target="_blank">
                 <i class="fa-brands fa-instagram ram"></i>
             </a>
-            <a href="https://www.linkedin.com/in/barre-ram-290064384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+            <a href="https://www.linkedin.com/in/barre-ram-290064384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank">
                 <i class="fa-brands fa-linkedin ram"></i>
             </a>
             <a href="https://x.com/b_g_n_ram?s=21" target="_blank">
@@ -216,29 +281,41 @@
                     <div class=" col-12 col-md-6 card-back mb-4 ">
 
                         <div class="d-flex flex-column">
-                            <img src="https://imgcdn.oto.com/large/gallery/interior/21/175/lamborghini-aventador-dashboard-view-348215.jpg" class="immg m-3">
-                            <p class="p-3 text-light">The Lamborghini interior blends sharp Italian craftsmanship with futuristic luxury, wrapping every surface in premium leather and carbon fiber.
-                                Its cockpit-style layout puts the driver at the center, with intuitive controls and a race-inspired digital display.
-                                Ambient lighting enhances the dramatic angles and bold stitching that define its unique character.
-                                Every detail is designed to deliver both adrenaline and elegance, making the cabin feel like a high-performance sanctuary.
+                            <img src="https://imgcdn.oto.com/large/gallery/interior/21/175/lamborghini-aventador-dashboard-view-348215.jpg"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Lamborghini interior blends sharp Italian craftsmanship with
+                                futuristic luxury, wrapping every surface in premium leather and carbon fiber.
+                                Its cockpit-style layout puts the driver at the center, with intuitive controls and a
+                                race-inspired digital display.
+                                Ambient lighting enhances the dramatic angles and bold stitching that define its unique
+                                character.
+                                Every detail is designed to deliver both adrenaline and elegance, making the cabin feel
+                                like a high-performance sanctuary.
                             </p>
                         </div>
                     </div>
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="	https://www.carbodydesign.com/media/2017/09/Lamborghini-Aventador-S-Roadster-Interior-02-720x481.jpg" class="immg m-3">
-                            <p class="p-3 text-light">Lamborghini seats are crafted with premium leather and Alcantara, combining luxury with motorsport precision.
-                                Their sculpted, ergonomic design hugs the driver, offering exceptional support during high-speed performance.
+                            <img src="	https://www.carbodydesign.com/media/2017/09/Lamborghini-Aventador-S-Roadster-Interior-02-720x481.jpg"
+                                class="immg m-3">
+                            <p class="p-3 text-light">Lamborghini seats are crafted with premium leather and Alcantara,
+                                combining luxury with motorsport precision.
+                                Their sculpted, ergonomic design hugs the driver, offering exceptional support during
+                                high-speed performance.
                                 Bold stitching and angular contours reflect the brand’s signature aggressive styling.
-                                Every seat balances comfort and adrenaline, making each ride feel like a race-ready experience.</p>
+                                Every seat balances comfort and adrenaline, making each ride feel like a race-ready
+                                experience.</p>
                         </div>
                     </div>
 
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Lamborghini_Aventador_interior.JPG" class="immg m-3">
-                            <p class="p-3 text-light">The Lamborghini steering wheel is designed like a precision instrument, blending carbon fiber, leather, and sharp Italian styling.
-                                Its flat-bottom shape and firm grip give the driver total control, even at extreme speeds.
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Lamborghini_Aventador_interior.JPG"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Lamborghini steering wheel is designed like a precision
+                                instrument, blending carbon fiber, leather, and sharp Italian styling.
+                                Its flat-bottom shape and firm grip give the driver total control, even at extreme
+                                speeds.
                                 Integrated controls and paddle shifters keep every command within effortless reach.
                                 Every turn feels razor-sharp and responsive, making the drive intensely exhilarating.
                             </p>
@@ -246,36 +323,53 @@
                     </div>
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJT-p4H3xEYgoc1S-uGgBuRQaHYaCFt6sjQ&s" class="immg m-3">
-                            <p class="p-3 text-light">The Lamborghini rear structure showcases bold aerodynamic design, shaped to channel airflow with precision.
-                                Its wide stance, sculpted vents, and signature Y-shaped elements create an aggressive and futuristic look.
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJT-p4H3xEYgoc1S-uGgBuRQaHYaCFt6sjQ&s"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Lamborghini rear structure showcases bold aerodynamic design,
+                                shaped to channel airflow with precision.
+                                Its wide stance, sculpted vents, and signature Y-shaped elements create an aggressive
+                                and futuristic look.
                                 The exposed diffuser and sharp lines highlight the car’s raw performance engineering.
-                                Every angle emphasizes power and speed, making the rear view as thrilling as the drive itself.
+                                Every angle emphasizes power and speed, making the rear view as thrilling as the drive
+                                itself.
                             </p>
                         </div>
                     </div>
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzpMarROOjxs6Ky8iKruG-z6pilvKS8n5Jw&s" class="immg m-3">
-                            <p class="p-3 text-light">The Lamborghini side view reveals a low, aerodynamic silhouette sculpted for pure speed.
-                                Sharp lines flow from the front to the rear, creating a dynamic sense of motion even at rest.
-                                Its signature scissor doors and bold air intakes add both drama and performance function.
-                                Every curve reflects power, precision, and the unmistakable presence of Italian supercar design.</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzpMarROOjxs6Ky8iKruG-z6pilvKS8n5Jw&s"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Lamborghini side view reveals a low, aerodynamic silhouette
+                                sculpted for pure speed.
+                                Sharp lines flow from the front to the rear, creating a dynamic sense of motion even at
+                                rest.
+                                Its signature scissor doors and bold air intakes add both drama and performance
+                                function.
+                                Every curve reflects power, precision, and the unmistakable presence of Italian supercar
+                                design.</p>
                         </div>
                     </div>
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="https://www.carbodydesign.com/media/2017/09/Lamborghini-Aventador-S-Roadster-Interior-01.jpg" class="immg m-3">
-                            <p class="p-3 text-light">The Lamborghini interior ambiance blends luxury and intensity, surrounding the driver with rich materials and sharp design.
-                                Soft ambient lighting highlights the cabin’s futuristic contours and premium craftsmanship.
-                                Every sound, from the engine note to the subtle cabin tones, enhances the sense of performance.
-                                It creates an atmosphere that feels both refined and electrifying, turning every drive into an immersive experience.</p>
+                            <img src="https://www.carbodydesign.com/media/2017/09/Lamborghini-Aventador-S-Roadster-Interior-01.jpg"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Lamborghini interior ambiance blends luxury and intensity,
+                                surrounding the driver with rich materials and sharp design.
+                                Soft ambient lighting highlights the cabin’s futuristic contours and premium
+                                craftsmanship.
+                                Every sound, from the engine note to the subtle cabin tones, enhances the sense of
+                                performance.
+                                It creates an atmosphere that feels both refined and electrifying, turning every drive
+                                into an immersive experience.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+            <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
                 </svg>back</button>
         </div>
     </div>
@@ -288,66 +382,96 @@
                     <div class=" col-12 col-md-6 card-back mb-4 ">
 
                         <div class="d-flex flex-column">
-                            <img src="https://exoticcars.ae/uploads/cars/ferrari-488-gtb/image-13407386.jpg" class="immg m-3">
-                            <p class="p-3 text-light">The Ferrari interior combines elegant Italian craftsmanship with a cockpit designed for pure performance.
-                                Premium leather, carbon fiber accents, and precise stitching create a luxurious yet athletic atmosphere.
-                                Driver-focused controls and a race-inspired steering wheel keep every function within effortless reach.
-                                The cabin feels refined, dynamic, and unmistakably Ferrari—built to elevate every moment behind the wheel.
+                            <img src="https://exoticcars.ae/uploads/cars/ferrari-488-gtb/image-13407386.jpg"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Ferrari interior combines elegant Italian craftsmanship with a
+                                cockpit designed for pure performance.
+                                Premium leather, carbon fiber accents, and precise stitching create a luxurious yet
+                                athletic atmosphere.
+                                Driver-focused controls and a race-inspired steering wheel keep every function within
+                                effortless reach.
+                                The cabin feels refined, dynamic, and unmistakably Ferrari—built to elevate every moment
+                                behind the wheel.
                             </p>
                         </div>
                     </div>
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="	https://image.carzy.net/cars/ZxHQDfZap9legF60OdR2/car_2019062417253180_y4gFMK.jpg" class="immg m-3">
-                            <p class="p-3 text-light">The Ferrari steering wheel is a masterpiece of race-focused engineering, blending carbon fiber with premium leather.
+                            <img src="	https://image.carzy.net/cars/ZxHQDfZap9legF60OdR2/car_2019062417253180_y4gFMK.jpg"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Ferrari steering wheel is a masterpiece of race-focused
+                                engineering, blending carbon fiber with premium leather.
                                 Its compact, flat-bottom design offers a firm, precise grip for high-speed control.
-                                Integrated controls and paddle shifters bring F1-inspired functionality right to the driver’s fingertips.
-                                Every turn feels sharp, responsive, and deeply connected to the road—true Ferrari precision..</p>
+                                Integrated controls and paddle shifters bring F1-inspired functionality right to the
+                                driver’s fingertips.
+                                Every turn feels sharp, responsive, and deeply connected to the road—true Ferrari
+                                precision..</p>
                         </div>
                     </div>
 
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="https://cobalt-automobiles.com/wp-content/uploads/2019/06/IMG_3860-1200x800.jpg" class="immg m-3">
-                            <p class="p-3 text-light">The Ferrari rear showcases a perfect blend of elegance and aggression, defined by its sculpted curves and bold stance.
-                                Signature circular taillights and quad exhausts highlight the brand’s iconic racing identity.
-                                Aerodynamic elements like the diffuser and vents enhance stability and high-speed performance.
-                                Every detail reflects power, precision, and the unmistakable presence of a true Ferrari supercar.
+                            <img src="https://cobalt-automobiles.com/wp-content/uploads/2019/06/IMG_3860-1200x800.jpg"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Ferrari rear showcases a perfect blend of elegance and
+                                aggression, defined by its sculpted curves and bold stance.
+                                Signature circular taillights and quad exhausts highlight the brand’s iconic racing
+                                identity.
+                                Aerodynamic elements like the diffuser and vents enhance stability and high-speed
+                                performance.
+                                Every detail reflects power, precision, and the unmistakable presence of a true Ferrari
+                                supercar.
                             </p>
                         </div>
                     </div>
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="https://images.kb-qatar.com/11624/fabb/knightsbridge-automotive-lg.jpg" class="immg m-3">
-                            <p class="p-3 text-light">Ferrari seats blend luxury materials like fine leather and Alcantara with precision racing ergonomics.
-                                Their sculpted form offers firm support, keeping the driver stable even during intense cornering.
-                                Bold stitching and lightweight carbon-fiber shells reflect Ferrari’s performance-driven design.
-                                Every seat delivers a balance of comfort and speed, embodying the spirit of Italian racing excellence.
+                            <img src="https://images.kb-qatar.com/11624/fabb/knightsbridge-automotive-lg.jpg"
+                                class="immg m-3">
+                            <p class="p-3 text-light">Ferrari seats blend luxury materials like fine leather and
+                                Alcantara with precision racing ergonomics.
+                                Their sculpted form offers firm support, keeping the driver stable even during intense
+                                cornering.
+                                Bold stitching and lightweight carbon-fiber shells reflect Ferrari’s performance-driven
+                                design.
+                                Every seat delivers a balance of comfort and speed, embodying the spirit of Italian
+                                racing excellence.
                             </p>
                         </div>
                     </div>
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="	https://i.ytimg.com/vi/wTzqFM5OYIA/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLCQj8Ygcc4t4atJGVrNu9F2vOWQHQ" class="immg m-3">
-                            <p class="p-3 text-light">The Ferrari side view reveals a sleek, aerodynamic profile sculpted for pure speed.
-                                Flowing curves and sharp character lines create a sense of motion even when the car is still.
-                                Its low stance, sweeping roofline, and prominent air intakes emphasize performance-focused design.
-                                Every angle radiates elegance and power, capturing the unmistakable silhouette of a Ferrari.</p>
+                            <img src="	https://i.ytimg.com/vi/wTzqFM5OYIA/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLCQj8Ygcc4t4atJGVrNu9F2vOWQHQ"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Ferrari side view reveals a sleek, aerodynamic profile
+                                sculpted for pure speed.
+                                Flowing curves and sharp character lines create a sense of motion even when the car is
+                                still.
+                                Its low stance, sweeping roofline, and prominent air intakes emphasize
+                                performance-focused design.
+                                Every angle radiates elegance and power, capturing the unmistakable silhouette of a
+                                Ferrari.</p>
                         </div>
                     </div>
                     <div class=" col-12 col-md-6 card-back mb-4">
                         <div class="d-flex flex-column">
-                            <img src="https://www.rossocorsa.com/wp-content/uploads/2019/10/ferrari-488-gtb-4-22.jpg" class="immg m-3">
-                            <p class="p-3 text-light">The Ferrari instrument cluster blends racing heritage with modern digital precision.
+                            <img src="https://www.rossocorsa.com/wp-content/uploads/2019/10/ferrari-488-gtb-4-22.jpg"
+                                class="immg m-3">
+                            <p class="p-3 text-light">The Ferrari instrument cluster blends racing heritage with modern
+                                digital precision.
                                 A bold central tachometer, often in vibrant colors, anchors the driver’s focus.
                                 Flanking digital displays provide real-time performance data with crisp clarity.
-                                Together, they create a cockpit experience that feels both high-tech and unmistakably Ferrari.</p>
+                                Together, they create a cockpit experience that feels both high-tech and unmistakably
+                                Ferrari.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+            <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
                 </svg>back</button>
         </div>
     </div>
@@ -360,65 +484,90 @@
 
                     <div class="d-flex flex-column">
                         <img src="https://images.app.ridemotive.com/aigpleisfqvgmdn9pyj5m9idj3l7" class="immg m-3">
-                        <p class="p-3 text-light">The Rolls-Royce instrument cluster exudes timeless elegance, combining classic analog dials with subtle modern refinement.
-                            Every gauge is crafted with precision, featuring clean lines and soft illumination for effortless readability.
-                            Its minimalist layout reflects the brand’s philosophy of quiet luxury and calm sophistication.
-                            Together, the instruments create a serene driving environment, enhancing the effortless grace of every journey.
+                        <p class="p-3 text-light">The Rolls-Royce instrument cluster exudes timeless elegance, combining
+                            classic analog dials with subtle modern refinement.
+                            Every gauge is crafted with precision, featuring clean lines and soft illumination for
+                            effortless readability.
+                            Its minimalist layout reflects the brand’s philosophy of quiet luxury and calm
+                            sophistication.
+                            Together, the instruments create a serene driving environment, enhancing the effortless
+                            grace of every journey.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsm7BqHltTyFiNrYHfsYmcZ35CJjgVha1-Tg&s" class="immg m-3">
-                        <p class="p-3 text-light">Rolls-Royce seats are crafted to feel like refined armchairs, wrapped in the softest hand-stitched leather.
-                            Their plush cushioning and meticulous ergonomics create an unmatched sense of comfort and serenity.
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsm7BqHltTyFiNrYHfsYmcZ35CJjgVha1-Tg&s"
+                            class="immg m-3">
+                        <p class="p-3 text-light">Rolls-Royce seats are crafted to feel like refined armchairs, wrapped
+                            in the softest hand-stitched leather.
+                            Their plush cushioning and meticulous ergonomics create an unmatched sense of comfort and
+                            serenity.
                             Heated, ventilated, and massage features elevate the experience to true first-class luxury.
-                            Every seat embodies the brand’s commitment to effortless elegance and bespoke craftsmanship..</p>
+                            Every seat embodies the brand’s commitment to effortless elegance and bespoke
+                            craftsmanship..</p>
                     </div>
                 </div>
 
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDFX5TbB8WhNUCZmSKxDT3rIOCTdnt683UAg&s" class="immg m-3">
-                        <p class="p-3 text-light">The Rolls-Royce steering wheel is a blend of refined craftsmanship and smooth, effortless control.
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDFX5TbB8WhNUCZmSKxDT3rIOCTdnt683UAg&s"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Rolls-Royce steering wheel is a blend of refined craftsmanship and
+                            smooth, effortless control.
                             Wrapped in the finest leather, it feels soft to the touch yet reassuringly precise.
-                            Its minimalist design reflects the brand’s focus on quiet luxury rather than racing aggression.
-                            Every turn glides with grace, making the driving experience calm, balanced, and undeniably elegant.
+                            Its minimalist design reflects the brand’s focus on quiet luxury rather than racing
+                            aggression.
+                            Every turn glides with grace, making the driving experience calm, balanced, and undeniably
+                            elegant.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
                         <img src="https://i.ytimg.com/vi/EjHJWmQJaPk/maxresdefault.jpg" class="immg m-3">
-                        <p class="p-3 text-light">The Rolls-Royce interior embodies ultimate luxury, crafted with hand-selected leather, rare woods, and bespoke details.
+                        <p class="p-3 text-light">The Rolls-Royce interior embodies ultimate luxury, crafted with
+                            hand-selected leather, rare woods, and bespoke details.
                             Soft ambient lighting and serene design elements create a calm, sanctuary-like atmosphere.
-                            Every surface feels meticulously finished, reflecting the brand’s dedication to uncompromising quality.
-                            Stepping inside feels like entering a world of quiet elegance, comfort, and timeless sophistication.
+                            Every surface feels meticulously finished, reflecting the brand’s dedication to
+                            uncompromising quality.
+                            Stepping inside feels like entering a world of quiet elegance, comfort, and timeless
+                            sophistication.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://i.ytimg.com/vi/JeR1_LKX_1Q/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLCg8BuUHLPwUiDN3gXsYRKT4F2INQ" class="immg m-3">
-                        <p class="p-3 text-light">The Rolls-Royce side view showcases a long, graceful silhouette that radiates timeless elegance.
-                            Its floating roofline, smooth body panels, and subtle chrome accents create a refined, commanding presence.
+                        <img src="https://i.ytimg.com/vi/JeR1_LKX_1Q/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLCg8BuUHLPwUiDN3gXsYRKT4F2INQ"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Rolls-Royce side view showcases a long, graceful silhouette that
+                            radiates timeless elegance.
+                            Its floating roofline, smooth body panels, and subtle chrome accents create a refined,
+                            commanding presence.
                             The iconic coach doors add a touch of luxury and drama, enhancing the car’s royal stature.
-                            Every line speaks of prestige and serenity, making the vehicle unmistakably Rolls-Royce..</p>
+                            Every line speaks of prestige and serenity, making the vehicle unmistakably Rolls-Royce..
+                        </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
                         <img src="https://weblog.spots.ag/05-2018/sweptail_annecy/th.jpg" class="immg m-3">
-                        <p class="p-3 text-light">The Rolls-Royce rear view reflects pure elegance, defined by clean lines and a regal, upright stance.
-                            Its sleek taillights and polished chrome accents add subtle sophistication without shouting for attention.
+                        <p class="p-3 text-light">The Rolls-Royce rear view reflects pure elegance, defined by clean
+                            lines and a regal, upright stance.
+                            Its sleek taillights and polished chrome accents add subtle sophistication without shouting
+                            for attention.
                             The sculpted trunk and broad posture convey stability, luxury, and quiet confidence.
-                            Every detail at the back embodies the brand’s signature blend of timeless design and graceful presence..</p>
+                            Every detail at the back embodies the brand’s signature blend of timeless design and
+                            graceful presence..</p>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+        <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
             </svg>back</button>
     </div>
     <div class="main-back pt-5" id="sectiondetail4">
@@ -429,66 +578,93 @@
                 <div class=" col-12 col-md-6 card-back mb-4 ">
 
                     <div class="d-flex flex-column">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_5WQEDHcMFHMcTaLMibOLIeXvJ5bfDsjiA&s" class="immg m-3">
-                        <p class="p-3 text-light">The McLaren instrument cluster delivers a futuristic, race-inspired display centered on pure driving performance.
-                            Its crisp digital graphics adapt to different drive modes, highlighting only the most essential data.
-                            The slim, pivoting screen enhances visibility while keeping the cockpit clean and driver-focused.
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_5WQEDHcMFHMcTaLMibOLIeXvJ5bfDsjiA&s"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The McLaren instrument cluster delivers a futuristic, race-inspired
+                            display centered on pure driving performance.
+                            Its crisp digital graphics adapt to different drive modes, highlighting only the most
+                            essential data.
+                            The slim, pivoting screen enhances visibility while keeping the cockpit clean and
+                            driver-focused.
                             Every element is engineered for speed, precision, and an immersive supercar experience.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="	https://mclaren.scene7.com/is/image/mclaren/w1-interior-hero-3:crop-16x9?wid=1920&hei=1080" class="immg m-3">
-                        <p class="p-3 text-light">The McLaren interior instruments are designed with a minimalist, driver-focused philosophy that emphasizes performance.
-                            Crisp digital displays and tactile controls provide instant access to essential driving data.
+                        <img src="	https://mclaren.scene7.com/is/image/mclaren/w1-interior-hero-3:crop-16x9?wid=1920&hei=1080"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The McLaren interior instruments are designed with a minimalist,
+                            driver-focused philosophy that emphasizes performance.
+                            Crisp digital displays and tactile controls provide instant access to essential driving
+                            data.
                             Carbon-fiber accents and precision-engineered buttons enhance the cockpit’s futuristic feel.
-                            Everything is positioned for speed, clarity, and total immersion in the supercar experience...</p>
+                            Everything is positioned for speed, clarity, and total immersion in the supercar
+                            experience...</p>
                     </div>
                 </div>
 
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://mclaren.scene7.com/is/image/mclaren/MSO-GT-Interior-1200x1200:crop-4x3?wid=1920&hei=1440" class="immg m-3">
-                        <p class="p-3 text-light">McLaren seats are crafted with lightweight materials like carbon fiber to maximize performance without sacrificing comfort.
-                            Their race-inspired design provides firm lateral support, keeping the driver steady during extreme cornering.
-                            Premium Alcantara and leather finishes add a touch of luxury to the focused, minimalist cockpit.
-                            Every seat reflects McLaren’s pursuit of precision, blending comfort, control, and aerodynamic efficiency.
+                        <img src="https://mclaren.scene7.com/is/image/mclaren/MSO-GT-Interior-1200x1200:crop-4x3?wid=1920&hei=1440"
+                            class="immg m-3">
+                        <p class="p-3 text-light">McLaren seats are crafted with lightweight materials like carbon fiber
+                            to maximize performance without sacrificing comfort.
+                            Their race-inspired design provides firm lateral support, keeping the driver steady during
+                            extreme cornering.
+                            Premium Alcantara and leather finishes add a touch of luxury to the focused, minimalist
+                            cockpit.
+                            Every seat reflects McLaren’s pursuit of precision, blending comfort, control, and
+                            aerodynamic efficiency.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://i.ytimg.com/vi/WNJTC-7dzIw/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLDJGzWbt4CxOj-XZprwk4kvwT8i1A" class="immg m-3">
-                        <p class="p-3 text-light">The McLaren side view features a sleek, aerodynamic profile sculpted for maximum performance.
+                        <img src="https://i.ytimg.com/vi/WNJTC-7dzIw/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLDJGzWbt4CxOj-XZprwk4kvwT8i1A"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The McLaren side view features a sleek, aerodynamic profile sculpted
+                            for maximum performance.
                             Deep side intakes channel air efficiently, giving the car a sharp, purposeful look.
                             Its low stance and flowing lines create a sense of speed even when standing still.
-                            Every curve reflects McLaren’s commitment to lightweight engineering and racing-inspired design.
+                            Every curve reflects McLaren’s commitment to lightweight engineering and racing-inspired
+                            design.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://i.ytimg.com/vi/DXrFmaDQcAc/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLBl9fJkECcK6r--9Noby9jru1MOxg" class="immg m-3">
-                        <p class="p-3 text-light">The McLaren back view reveals a striking blend of aerodynamics and aggressive performance styling.
-                            Slim LED taillights and exposed mesh vents highlight the car’s lightweight, track-focused engineering.
-                            A prominent diffuser and centered exhausts enhance downforce while giving the rear a bold presence.
-                            Every element showcases precision, speed, and the unmistakable DNA of a McLaren supercar..</p>
+                        <img src="https://i.ytimg.com/vi/DXrFmaDQcAc/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLBl9fJkECcK6r--9Noby9jru1MOxg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The McLaren back view reveals a striking blend of aerodynamics and
+                            aggressive performance styling.
+                            Slim LED taillights and exposed mesh vents highlight the car’s lightweight, track-focused
+                            engineering.
+                            A prominent diffuser and centered exhausts enhance downforce while giving the rear a bold
+                            presence.
+                            Every element showcases precision, speed, and the unmistakable DNA of a McLaren supercar..
+                        </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://www.motorshow.me/uploadImages/GalleryPics/280000/B283871-2018-McLaren-720S--3-.jpg" class="immg m-3">
-                        <p class="p-3 text-light">The McLaren steering wheel is engineered for pure precision, featuring a lightweight design that responds instantly to every input.
+                        <img src="https://www.motorshow.me/uploadImages/GalleryPics/280000/B283871-2018-McLaren-720S--3-.jpg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The McLaren steering wheel is engineered for pure precision, featuring
+                            a lightweight design that responds instantly to every input.
                             Wrapped in premium Alcantara or leather, it offers a firm, race-focused grip.
                             Its minimalist layout avoids clutter, keeping the driver connected directly to the road.
-                            Every turn feels sharp, controlled, and deeply engaging—true to McLaren’s racing heritage.</p>
+                            Every turn feels sharp, controlled, and deeply engaging—true to McLaren’s racing heritage.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+        <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
             </svg>back</button>
     </div>
     <div class="main-back pt-5" id="sectiondetail5">
@@ -499,66 +675,91 @@
                 <div class=" col-12 col-md-6 card-back mb-4 ">
 
                     <div class="d-flex flex-column">
-                        <img src="https://imgd.aeplcdn.com/1280x720/cw/ec/41891/Porsche-911-Exterior-168104.jpg?wm=0" class="immg m-3">
-                        <p class="p-3 text-light">The Porsche instrument cluster blends classic heritage with modern digital precision.
-                            A prominent central tachometer anchors the display, keeping the driver focused on performance.
+                        <img src="https://imgd.aeplcdn.com/1280x720/cw/ec/41891/Porsche-911-Exterior-168104.jpg?wm=0"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Porsche instrument cluster blends classic heritage with modern
+                            digital precision.
+                            A prominent central tachometer anchors the display, keeping the driver focused on
+                            performance.
                             Flanking digital screens provide customizable data with crisp clarity and smooth animations.
-                            Together, they create a cockpit that feels both timeless and technologically advanced—pure Porsche.
+                            Together, they create a cockpit that feels both timeless and technologically advanced—pure
+                            Porsche.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://i.ytimg.com/vi/HGlXOAPLOpQ/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLCMTk5SRWoGPjYnFKh1_4v8A330CQ" class="immg m-3">
-                        <p class="p-3 text-light">The Porsche back view is defined by its wide stance and iconic, smoothly sculpted curves.
-                            A continuous LED light bar stretches across the rear, giving it a modern yet unmistakable identity.
+                        <img src="https://i.ytimg.com/vi/HGlXOAPLOpQ/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLCMTk5SRWoGPjYnFKh1_4v8A330CQ"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Porsche back view is defined by its wide stance and iconic,
+                            smoothly sculpted curves.
+                            A continuous LED light bar stretches across the rear, giving it a modern yet unmistakable
+                            identity.
                             The dual exhausts and subtle diffuser emphasize performance without overwhelming the design.
-                            Every detail reflects Porsche’s blend of elegance, engineering precision, and sporty character.</p>
+                            Every detail reflects Porsche’s blend of elegance, engineering precision, and sporty
+                            character.</p>
                     </div>
                 </div>
 
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://www.carscoops.com/wp-content/uploads/2017/08/f4ab09ab-topcar-panamera-new-interior-1.jpg" class="immg m-3">
-                        <p class="p-3 text-light">The Porsche interior blends refined craftsmanship with a clean, driver-centered layout built for performance.
-                            Premium leather, brushed metal, and high-quality finishes create a luxurious yet sporty atmosphere.
-                            The cockpit’s intuitive controls and modern digital interfaces enhance focus and ease of use.
+                        <img src="https://www.carscoops.com/wp-content/uploads/2017/08/f4ab09ab-topcar-panamera-new-interior-1.jpg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Porsche interior blends refined craftsmanship with a clean,
+                            driver-centered layout built for performance.
+                            Premium leather, brushed metal, and high-quality finishes create a luxurious yet sporty
+                            atmosphere.
+                            The cockpit’s intuitive controls and modern digital interfaces enhance focus and ease of
+                            use.
                             Every detail reflects Porsche’s balance of comfort, precision, and timeless design.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://configurator.porsche.com/model/2026/9926S2/common/detail_M1N3_m_0.jpg" class="immg m-3">
-                        <p class="p-3 text-light">The Porsche steering wheel is designed for precision, offering a perfect balance of comfort and performance.
+                        <img src="https://configurator.porsche.com/model/2026/9926S2/common/detail_M1N3_m_0.jpg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Porsche steering wheel is designed for precision, offering a
+                            perfect balance of comfort and performance.
                             Wrapped in high-quality leather, it provides a firm, confident grip for spirited driving.
-                            Its multifunction controls and paddle shifters keep essential commands at the driver’s fingertips.
-                            Every turn feels sharp, responsive, and connected—capturing the true essence of Porsche engineering..
+                            Its multifunction controls and paddle shifters keep essential commands at the driver’s
+                            fingertips.
+                            Every turn feels sharp, responsive, and connected—capturing the true essence of Porsche
+                            engineering..
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://i.ytimg.com/vi/HKsiuq77SQg/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLANQdklzlBJx7dS82Eu8cQqkDhwVg" class="immg m-3">
-                        <p class="p-3 text-light">The Porsche side view showcases a sleek, timeless silhouette shaped by decades of performance heritage.
-                            Its flowing roofline, muscular wheel arches, and smooth body curves create an unmistakable profile.
+                        <img src="https://i.ytimg.com/vi/HKsiuq77SQg/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLANQdklzlBJx7dS82Eu8cQqkDhwVg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Porsche side view showcases a sleek, timeless silhouette shaped by
+                            decades of performance heritage.
+                            Its flowing roofline, muscular wheel arches, and smooth body curves create an unmistakable
+                            profile.
                             The low stance and aerodynamic contours highlight its balance of elegance and speed.
                             Every line reflects Porsche’s commitment to precision engineering and iconic design..</p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://images.kb-qatar.com/11455/7362/knightsbridge-automotive-lg.jpg" class="immg m-3">
-                        <p class="p-3 text-light">Porsche seats are crafted to balance luxurious comfort with firm, race-inspired support.
+                        <img src="https://images.kb-qatar.com/11455/7362/knightsbridge-automotive-lg.jpg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">Porsche seats are crafted to balance luxurious comfort with firm,
+                            race-inspired support.
                             Premium leather and Alcantara finishes enhance the sporty yet refined feel of the cabin.
                             Their sculpted design holds the driver securely during dynamic driving and tight cornering.
-                            Every seat embodies Porsche’s dedication to performance, precision, and timeless craftsmanship..</p>
+                            Every seat embodies Porsche’s dedication to performance, precision, and timeless
+                            craftsmanship..</p>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+        <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
             </svg>back</button>
     </div>
     <div class="main-back pt-5" id="sectiondetail6">
@@ -569,88 +770,126 @@
                 <div class=" col-12 col-md-6 card-back mb-4 ">
 
                     <div class="d-flex flex-column">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYsX5TVQVCVA3pvebHHiaS8ZwJPP0F_EqYpA&s" class="immg m-3">
-                        <p class="p-3 text-light">The Bugatti interior blends ultra-luxury with extreme performance, crafted from the finest leather, carbon fiber, and polished metals.
-                            Its minimalist yet futuristic layout focuses on precision, placing every control perfectly within reach.
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYsX5TVQVCVA3pvebHHiaS8ZwJPP0F_EqYpA&s"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Bugatti interior blends ultra-luxury with extreme performance,
+                            crafted from the finest leather, carbon fiber, and polished metals.
+                            Its minimalist yet futuristic layout focuses on precision, placing every control perfectly
+                            within reach.
                             Ambient lighting and artisanal details highlight the cabin’s bespoke craftsmanship.
-                            Inside, the atmosphere feels exclusive, powerful, and engineered for a world-class driving experience.
+                            Inside, the atmosphere feels exclusive, powerful, and engineered for a world-class driving
+                            experience.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://cdn.mos.cms.futurecdn.net/edUWoCPxLwDY34RMzqERGm-1200-80.jpg" class="immg m-3">
-                        <p class="p-3 text-light">The Bugatti instrument cluster combines analog elegance with cutting-edge digital precision.
-                            A bold central speedometer reflects the car’s immense power, framed by crisp performance displays.
+                        <img src="https://cdn.mos.cms.futurecdn.net/edUWoCPxLwDY34RMzqERGm-1200-80.jpg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Bugatti instrument cluster combines analog elegance with
+                            cutting-edge digital precision.
+                            A bold central speedometer reflects the car’s immense power, framed by crisp performance
+                            displays.
                             Its clean, driver-focused layout ensures every detail is visible without distraction.
-                            Together, the gauges create an atmosphere of sophistication and speed worthy of a hypercar legend..</p>
+                            Together, the gauges create an atmosphere of sophistication and speed worthy of a hypercar
+                            legend..</p>
                     </div>
                 </div>
 
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPRIVvv6sSFVO2cyj0oca5-VAzqWkHfIGLYw&s" class="immg m-3">
-                        <p class="p-3 text-light">The Bugatti side view showcases a sculpted, aerodynamic silhouette built for unmatched speed.
-                            Its signature C-shaped line flows gracefully across the body, blending function with artistic design.
+                        <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPRIVvv6sSFVO2cyj0oca5-VAzqWkHfIGLYw&s"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Bugatti side view showcases a sculpted, aerodynamic silhouette
+                            built for unmatched speed.
+                            Its signature C-shaped line flows gracefully across the body, blending function with
+                            artistic design.
                             The low stance and bold curves create a powerful presence even at a standstill.
-                            Every angle reflects Bugatti’s fusion of engineering excellence and timeless hypercar elegance.
+                            Every angle reflects Bugatti’s fusion of engineering excellence and timeless hypercar
+                            elegance.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://i.ytimg.com/vi/NKJlYAiSuFQ/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLAbXKuNKRk9vMIUmwxLMK2e5XKHSg" class="immg m-3">
-                        <p class="p-3 text-light">The Bugatti back view is defined by its wide, muscular stance and striking aerodynamic design.
-                            A continuous LED light bar stretches across the rear, giving it a futuristic and unmistakable identity.
-                            Its quad exhausts and large diffuser emphasize the car’s immense power and engineering precision.
+                        <img src="https://i.ytimg.com/vi/NKJlYAiSuFQ/hq720.jpg?sqp=-…ADIQj0AgKJD&rs=AOn4CLAbXKuNKRk9vMIUmwxLMK2e5XKHSg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">The Bugatti back view is defined by its wide, muscular stance and
+                            striking aerodynamic design.
+                            A continuous LED light bar stretches across the rear, giving it a futuristic and
+                            unmistakable identity.
+                            Its quad exhausts and large diffuser emphasize the car’s immense power and engineering
+                            precision.
                             Every detail at the back reflects Bugatti’s mastery of speed, luxury, and hypercar artistry.
                         </p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
-                        <img src="https://www.luxurysocietyasia.com/wp-content/uploads/Bugatti-Chiron-interior-3-1200x800.jpg" class="immg m-3">
-                        <p class="p-3 text-light">Bugatti seats are crafted from the finest leather and lightweight materials, blending luxury with hypercar performance.
+                        <img src="https://www.luxurysocietyasia.com/wp-content/uploads/Bugatti-Chiron-interior-3-1200x800.jpg"
+                            class="immg m-3">
+                        <p class="p-3 text-light">Bugatti seats are crafted from the finest leather and lightweight
+                            materials, blending luxury with hypercar performance.
                             Their ergonomic, sculpted design offers firm support even at extreme speeds.
-                            Intricate stitching and premium finishes highlight the brand’s commitment to bespoke craftsmanship.
+                            Intricate stitching and premium finishes highlight the brand’s commitment to bespoke
+                            craftsmanship.
                             Every seat delivers a perfect balance of comfort, control, and world-class refinement.</p>
                     </div>
                 </div>
                 <div class=" col-12 col-md-6 card-back mb-4">
                     <div class="d-flex flex-column">
                         <img src="https://www.carscoops.com/wp-content/uploads/2024/01/Bugatti.jpg" class="immg m-3">
-                        <p class="p-3 text-light">The Bugatti steering wheel is a masterpiece of precision, wrapped in premium leather and carbon fiber.
-                            Its ergonomic shape offers a confident grip, giving the driver total control at incredible speeds.
-                            Minimalist controls keep the focus on performance, enhancing the hypercar’s pure driving feel.
-                            Every turn feels sharp, responsive, and engineered for the ultimate high-speed experience.</p>
+                        <p class="p-3 text-light">The Bugatti steering wheel is a masterpiece of precision, wrapped in
+                            premium leather and carbon fiber.
+                            Its ergonomic shape offers a confident grip, giving the driver total control at incredible
+                            speeds.
+                            Minimalist controls keep the focus on performance, enhancing the hypercar’s pure driving
+                            feel.
+                            Every turn feels sharp, responsive, and engineered for the ultimate high-speed experience.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+        <button class="btn btn-outline-light ml-4 mb-4" onclick="display('sectionpageone')"><svg
+                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
             </svg>back</button>
     </div>
     <div id="sectiondetail7">
         <div class="ramm">
             <i class="fa-sharp fa-solid fa-angle-left icons" onclick="display('sectionpageone')"></i>
             <div class="d-flex flex-row ganesh">
-                <img src="https://w0.peakpx.com/wallpaper/581/477/HD-wallpaper-vertical-car-vertical-cars-thumbnail.jpg" class="pic" />
+                <img src="https://w0.peakpx.com/wallpaper/581/477/HD-wallpaper-vertical-car-vertical-cars-thumbnail.jpg"
+                    class="pic" />
                 <img src="https://cdn.pixabay.com/photo/2024/07/13/07/40/cars-8891625_640.jpg" class="pic" />
                 <img src="https://i.pinimg.com/736x/69/ef/5a/69ef5af84bf3625da10f31351248db1d.jpg" class="pic" />
                 <img src="https://i.pinimg.com/736x/13/f1/64/13f1642b90b79e5573480d9a4cb9eb51.jpg" class="pic" />
-                <img src="https://assets.gqindia.com/photos/60196cc54d91627ebc10e66e/master/w_1600%2Cc_limit/Bentley.jpg" class="pic" />
+                <img src="https://assets.gqindia.com/photos/60196cc54d91627ebc10e66e/master/w_1600%2Cc_limit/Bentley.jpg"
+                    class="pic" />
                 <img src="https://i.pinimg.com/564x/03/83/37/0383373f4bd05a8c1f3ef4dd396b52fe.jpg" class="pic" />
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMXVVL7NrJ0hlTEwmOOE-R6dPMGmN-HyY1A&s" class="pic" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMXVVL7NrJ0hlTEwmOOE-R6dPMGmN-HyY1A&s"
+                    class="pic" />
                 <img src="https://i.pinimg.com/236x/6f/ac/d5/6facd5f4d2183deaed6cad63882a4d88.jpg" class="pic" />
             </div>
             <div class="text-center">
                 <h1 class="text-center mt-5 hg">Elegance in Motion</h1>
-                <P class="text-light">A sports car is defined by its emphasis on dynamic performance, such as superior handling, acceleration, and top speed. These machines are typically low-profile, often with only two seats, and boast aggressive, aerodynamic styling designed to turn heads. Owning a sports car is often a matter of passion, offering an exhilarating driving experience and a raw connection to the road that separates it from everyday vehicles. As Ferdinand Porsche once said, "I couldn't find the sports car of my dreams, so I built it myself," capturing the essence of automotive passio</P>
-                <button class="btn btn-outline-warning down"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
-                    </svg> | contact below | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                <P class="text-light">A sports car is defined by its emphasis on dynamic performance, such as superior
+                    handling, acceleration, and top speed. These machines are typically low-profile, often with only two
+                    seats, and boast aggressive, aerodynamic styling designed to turn heads. Owning a sports car is
+                    often a matter of passion, offering an exhilarating driving experience and a raw connection to the
+                    road that separates it from everyday vehicles. As Ferdinand Porsche once said, "I couldn't find the
+                    sports car of my dreams, so I built it myself," capturing the essence of automotive passio</P>
+                <button class="btn btn-outline-warning down"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                    </svg> | contact below | <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
                     </svg></button>
 
             </div>
@@ -659,7 +898,8 @@
                 <a href="https://www.instagram.com/b.r.n.ganesh?igsh=Y3BjN3pycmg2djhx&utm_source=qr" target="_blank">
                     <i class="fa-brands fa-instagram ram"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/barre-ram-290064384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <a href="https://www.linkedin.com/in/barre-ram-290064384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    target="_blank">
                     <i class="fa-brands fa-linkedin ram"></i>
                 </a>
                 <a href="https://x.com/b_g_n_ram?s=21" target="_blank">
@@ -668,7 +908,34 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script type="text/javascript"
+        src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+    <div id="sectionbooking1">
+
+        <div class="book d-flex flex-row justify-content-center">
+            <div class=" d-flex flex-column justify-content-center">
+                <i class="fa-sharp fa-solid fa-angle-left icons " onclick="display('sectionpageone')" id="bhai"></i>
+                <div class="login-box ">
+                    <h2 class="text-warning">Car Booking</h2>
+
+                    <input type="text" id="bookName" placeholder="Your Name" class="form-control mb-3" />
+                    <input type="email" id="bookEmail" placeholder="Your Email" class="form-control mb-3" />
+                    <input type="text" id="bookPhone" placeholder="Phone Number" class="form-control mb-3" />
+                    <input type="date" id="bookDate" class="form-control mb-3" />
+
+                    <input type="text" id="carName" class="form-control mb-3" readonly />
+
+                    <button class="btn btn-warning btn-block" onclick="bookCar()">Confirm Booking</button>
+
+                    <p id="bookingMsg" class="text-success mt-2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

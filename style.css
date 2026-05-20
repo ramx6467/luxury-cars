@@ -1,18 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+#bhai {
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border: 5px solid orange;
+    width: 75px;
+}
+
+.book {
+    height: 100vh;
+    background-size: cover;
+    background-image: url("	https://wallpapercat.com/w/full/2/2/d/161781-2560x1600-desktop-hd-rolls-royce-background.jpg");
+}
+
 .login-container {
     height: 100vh;
-    background: black;
+    background-size: cover;
+    background-image: url("	https://wallpaperaccess.com/full/423122.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .login-box {
-    background: #111;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
     padding: 40px;
     border-radius: 10px;
-    border: 1px solid orange;
+    border: 5px solid orange;
     width: 320px;
     text-align: center;
 }

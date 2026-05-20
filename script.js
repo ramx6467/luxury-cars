@@ -67,7 +67,7 @@ function loginUser() {
 
 
 // AUTO LOGIN CHECK
-window.onload = function() {
+window.onload = function () {
     if (localStorage.getItem("isLoggedIn") === "true") {
         display('sectionpageone');
     } else {
@@ -82,4 +82,60 @@ function logoutUser() {
     localStorage.removeItem("currentUser");
 
     display('sectionauth');
+}
+// OPEN BOOKING FORM
+function openBooking(car) {
+    document.getElementById("carName").value = car;
+    display('sectionbooking1');
+}
+
+
+// BOOK CAR FUNCTION
+function bookCar() {
+
+    let name = document.getElementById("bookName").value;
+    let email = document.getElementById("bookEmail").value;
+    let phone = document.getElementById("bookPhone").value;
+    let date = document.getElementById("bookDate").value;
+    let car = document.getElementById("carName").value;
+    let msg = document.getElementById("bookingMsg");
+
+    if (name === "" || email === "" || phone === "" || date === "") {
+        msg.innerHTML = "Please fill all booking details";
+        msg.style.color = "red";
+        return;
+    }
+
+    // Save booking in localStorage
+    let bookings = JSON.parse(localStorage.getItem("carBookings")) || [];
+
+    bookings.push({
+        name: name,
+        email: email,
+        phone: phone,
+        date: date,
+        car: car
+    });
+
+    localStorage.setItem("carBookings", JSON.stringify(bookings));
+
+    // SEND EMAIL
+    emailjs.send("service_z06csiq", "template_gkw5fea", {
+        customer_name: name,
+        customer_email: email,
+        phone: phone,
+        booking_date: date,
+        car_name: car
+    }).then(function (response) {
+
+        msg.innerHTML = "Car booked successfully! Confirmation mail sent.";
+        msg.style.color = "lightgreen";
+
+    }, function (error) {
+
+        msg.innerHTML = "Booking saved but email failed!";
+        msg.style.color = "orange";
+
+    });
+
 }
